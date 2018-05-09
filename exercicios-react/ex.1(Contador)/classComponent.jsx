@@ -5,7 +5,9 @@ export default class ClassComponent extends Component {
         super(props) 
         this.state = { value: props.initialValue}
     }
-
+    //props não é alterado
+    //Para isso cria-se uma nova classe para poder incrementar e evoluir a informação 
+    //Neste caso a informação props.initialValue se tornou state.value
     sum(delta) {
         this.setState({ value: this.state.value + delta})
     }
