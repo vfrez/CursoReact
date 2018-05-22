@@ -30,7 +30,7 @@ module.exports = {
                 plugins: ['transform-object-rest-spread']
             }
         }, {
-            text: /\.css$/,
+            test: /\.css$/,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         }, {
             test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
